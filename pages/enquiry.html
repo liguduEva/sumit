@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Enquiry & Cost Estimator | Sweet Crumbs Pops Bakery</title>
+    <meta name="description" content="Submit a custom order enquiry for cakes, cake pops, sourdough bread, or catering. Instant cost feedback included!">
+    <link rel="stylesheet" href="../miscellanous/style.css">
+    <!-- Link external JavaScript file from the Micellanous folder -->
+    <script src="../miscellanous/script.js"></script>
+</head>
+<body>
+    <header>
+        <nav aria-label="Main Site Navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="enquiry.html" class="active">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <h1>Order Enquiry & Cost Estimator</h1>
+        <p>Complete the form below to receive an instant price estimate and schedule custom bakery orders.</p>
+
+        <form id="enquiry-form" class="custom-form" novalidate>
+            <div class="form-group">
+                <label for="enquiry-name">Customer Full Name *</label>
+                <input type="text" id="enquiry-name" name="name" required placeholder="e.g. Lutendo Eva">
+                <span class="error-msg" id="err-enquiry-name"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="enquiry-email">Email Address *</label>
+                <input type="email" id="enquiry-email" name="email" required placeholder="e.g. eva@example.co.za">
+                <span class="error-msg" id="err-enquiry-email"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="enquiry-phone">Contact Phone Number *</label>
+                <input type="tel" id="enquiry-phone" name="phone" required placeholder="e.g. 0821234567">
+                <span class="error-msg" id="err-enquiry-phone"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="enquiry-service">Select Product *</label>
+                <select id="enquiry-service" name="service" required>
+                    <option value="">-- Select Product --</option>
+                    <option value="cakepops">Custom Cake Pops (R180.00 / dozen)</option>
+                    <option value="cupcakes">Custom Message Cupcakes (R150.00 / 6 pack)</option>
+                    <option value="rainbowcake">Rainbow Layer Celebration Cake (R450.00)</option>
+                    <option value="bread">Artisan Sourdough Bread (R45.00 / loaf)</option>
+                </select>
+                <span class="error-msg" id="err-enquiry-service"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="enquiry-quantity">Quantity Needed *</label>
+                <input type="number" id="enquiry-quantity" name="quantity" min="1" value="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="enquiry-details">Order Notes & Event Date *</label>
+                <textarea id="enquiry-details" name="details" rows="5" required placeholder="Mention event date, custom colors, theme, or special instructions..."></textarea>
+                <span class="error-msg" id="err-enquiry-details"></span>
+            </div>
+
+            <button type="submit" class="btn">Calculate Estimate & Submit Order</button>
+        </form>
+
+        <div id="enquiry-response-output" class="response-card" style="display: none; margin-top: 25px;"></div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Sweet Crumbs Pops Bakery (Pty) Ltd. All Rights Reserved. Student ST10526509.</p>
+        </div>
+    </footer>
+    <script src="../Micellanous/script.js"></script>
+</body>
+</html>
