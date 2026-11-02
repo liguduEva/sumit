@@ -1,0 +1,45 @@
+3.0.0] - Part 3 Final Release — 2026-08-25
+​Added
+​JavaScript Core Engine (Micellanous/script.js):
+​Integrated interactive FAQ accordion toggles with expand/collapse indicators.
+​Embedded Leaflet.js interactive OpenStreetMap centered on Pretoria HQ (-25.7479, 28.2293).
+​Built real-time text input filter logic on pages/menu.html to dynamically show/hide product cards.
+​Implemented Modal Lightbox gallery allowing users to click image cards to open high-resolution previews.
+​Client-Side Validation & Processors:
+​Added multi-field validation on pages/enquiry.html with dynamic cost calculation (unitPrice * quantity) and populated response card UI.
+​Added contact input validation on pages/contact.html with mailto string compilation (mailto:info@sweetcrumbspops.co.za).
+​Search Engine Optimization (SEO):
+​Added robots.txt file directing crawlers to indexing routes.
+​Built XML sitemap (sitemap.xml) covering all 6 site URLs with updated priority flags.
+​Deployment:
+​Successfully published repository to Netlify live hosting server (https://sweetcrumbsbakery.netlify.app).
+​Changed / Fixed
+​Part 2 Lecturer Feedback Fixes:
+​Added dynamic response message container elements to resolve missing form output issues.
+​Enhanced contrast ratios on buttons and hover state indicators to comply with WCAG 2.2 AA standards.
+​[2.0.0] - Part 2 Release — 2026-08-15
+​Added
+​Centralized External Stylesheet (Micellanous/style.css):
+​Implemented universal CSS reset (*, *::before, *::after).
+​Added CSS design tokens (:root variables) for primary brown (#4A2E2B), soft pink (#FFD1DC), and cream background (#FFFDD0).
+​Styled Aptos typography hierarchy and line-height scales.
+​Layout Architecture:
+​Implemented flexible desktop Grid systems (grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))).
+​Configured Flexbox navigation header pinned to sticky top viewport.
+​Micro-Interactions & Responsive Queries:
+​Added card hover translate animations (transform: translateY(-5px)).
+​Added media query breakpoints for Tablet (max-width: 900px) and Mobile (max-width: 600px).
+​Changed / Fixed
+​Part 1 Lecturer Feedback Fixes:
+​Standardized all sub-page navigation relative paths (../pages/) to fix broken link errors.
+​Replaced inline CSS attributes with CSS classes.
+​[1.0.0] - Part 1 Initiation Release — 2026-08-01
+​Added
+​Project Proposals:
+​Drafted dual proposals for Sweet Crumbs Pops Bakery (Approved) and Bright Spark Electrical Contractors.
+​HTML Structure:
+​Built 6 core semantic HTML pages (index.html, pages/aboutus.html, pages/menu.html, pages/events.html, pages/enquiry.html, pages/contact.html).
+​Integrated high-resolution Unsplash image assets with alt tags across all project gallery items.
+​Created standardized header navigation across all pages.
+​Repository Setup:
+​Initialized private GitHub repository with standardized file structure (pages/

@@ -1,0 +1,18 @@
+/sweet-crumbs-pops-bakery/
+│
+├── index.html
+├── README.md
+├── CHANGELOG.md
+├── robots.txt
+├── sitemap.xml
+│
+├── pages/
+│   ├── aboutus.html
+│   ├── menu.html
+│   ├── events.html
+│   ├── enquiry.html
+│   └── contact.html
+│
+└── Micellanous/
+    ├── style.css
+    └── script.js
